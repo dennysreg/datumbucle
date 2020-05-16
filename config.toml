@@ -1,0 +1,74 @@
+baseurl         = "http://www.datumbucle.com/"
+theme           = "casper-two"
+languageCode    = "en-US"
+disqusShortname = ""
+paginate        = 6
+#SectionPagesMenu = "main"
+canonifyurls    = true
+
+
+[params]
+  title       = "Data Pipeline Recipes"
+  subtitle    = "make simple things simple..."
+  copyright   = "© 2019"
+
+  cover       = "img/blog-cover.jpg"
+  description = "Here is a description of your site."
+  metaDescription = ""
+  googleAnalytics = ""
+  customCSS = []
+  RSSLink = ""
+
+  twitterName = "dennysreg"
+  githubName = "dennysreg"
+  linkedinName = "dennysregalado"
+  mediumName = ""
+
+  logo = ""
+  orgName = "DRD"
+  orgWebsite = ""
+  orgDescription = "Here is a description placeholder for your org"
+
+  showSupport = true
+
+  author = "DRD"
+  authorAvatar = "img/photo.jpg"
+  authorLocation = "Mexico City"
+  authorWebsite = "https://www.bininili.wordpress.com"
+  authorDescription = "just another blogger"
+
+  pageNotFoundTitle = "404 - Page not found"
+
+  #casper or caspertwo
+  singleViewStyle = "casper"
+
+[permalinks]
+  post = "/post/:slug/"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 200
+
+[[menu.main]]
+  name = "Python"
+  url = "/tags/python/"
+  weight = 100
+
+[[menu.main]]
+  name = "Categories"
+  url = "/categories/"
+  weight = 99
+
+[[menu.main]]
+  name = "External"
+  url = "https://google.com/"
+  weight = 95
+
+
+[[deployment.targets]]
+# An arbitrary name for this target.
+name = "mydeployment"
+# The Go Cloud Development Kit URL to deploy to. Examples:
+# GCS; see https://gocloud.dev/howto/blob/#gcs
+URL = "gs://www.datumbucle.com"

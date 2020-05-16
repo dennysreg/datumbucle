@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on </title>
+    <link>http://www.datumbucle.com/post/</link>
+    <description>Recent content in Posts on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 16 May 2020 00:50:18 -0500</lastBuildDate>
+    
+	<atom:link href="http://www.datumbucle.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Up and Running Mysql</title>
+      <link>http://www.datumbucle.com/post/up-and-running-mysql/</link>
+      <pubDate>Sat, 16 May 2020 00:50:18 -0500</pubDate>
+      
+      <guid>http://www.datumbucle.com/post/up-and-running-mysql/</guid>
+      <description>Why MySQL matters? Our pipeline orchestrator runs on Google Cloud Platform under Google Cloud Composer product name. For short Composer is an environment used for Apache Airflow deployment and the following diagrame ilustrate its components:
+Cloud SQL stores the Airflow metadata and that database could be:
+ MySQL PostgreSQL  Since our current configuration uses MySQL is important to brush up the dialect. Remember that every database engine implement their own features and I strongly recommend use standard SQL syntax in order to make it cross-database queries.</description>
+    </item>
+    
+    <item>
+      <title>Combinations</title>
+      <link>http://www.datumbucle.com/post/combinations/</link>
+      <pubDate>Wed, 23 Oct 2019 13:42:18 -0500</pubDate>
+      
+      <guid>http://www.datumbucle.com/post/combinations/</guid>
+      <description>deleteDigit I like to have a playground like codesignal to write code time to time.
+The intent of this post is to show you how easy is to solve these kind of problems without getting deeper to finding the optimal solution.
+I will borrow this description from challenges section and I extremely suggest to give it a shot before read the solution.
+Given some integer, find the maximal number you can obtain by deleting exactly one digit of the given number.</description>
+    </item>
+    
+  </channel>
+</rss>
