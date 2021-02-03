@@ -1,5 +1,5 @@
 baseurl         = "http://www.datumbucle.com/"
-theme           = "casper-two"
+theme           = "harbor"
 languageCode    = "en-US"
 disqusShortname = ""
 paginate        = 6
@@ -40,7 +40,7 @@ canonifyurls    = true
   pageNotFoundTitle = "404 - Page not found"
 
   #casper or caspertwo
-  singleViewStyle = "casper"
+#  singleViewStyle = "casper"
 
 [permalinks]
   post = "/post/:slug/"
