@@ -1,7 +1,7 @@
 ---
-title: "Mssqloperator"
+title: "Making Airlflow talks with MS SQL Server"
 date: 2021-02-03T06:07:27-06:00
-draft: true
+draft: false
 ---
 
 # MS SQL Server Operator on Airflow
@@ -20,7 +20,25 @@ This is how will looks like in your DAG script
 
 This is how your task will look in action
 {{< highlight python "linenos=table,hl_lines=8 15-17,linenostart=1" >}}
+from airflow import DAG
+from airflow.operators.mssql_operator import MsSqlOperator    
 
+dag = DAG(
+    'helloworld_dag',
+    default_args=default_args,
+    description='simplest DAG example',
+    schedule_interval="0 14 * * *",
+    catchup=False,
+    dagrun_timeout=timedelta(minutes=60))
+
+hit_mssql = MsSqlOperator(
+         task_id='sql-op',
+         mssql_conn_id='mssql_default',
+         sql=f"exec dbo.process_some_tables @foo={foo}, @bar='bar'",            
+         autocommit=True,
+         database='my_dummy_db',
+         dag=dag
+     )
 {{< / highlight >}}
 
 ### Break-down
@@ -38,6 +56,7 @@ class airflow.providers.microsoft.mssql.operators.mssql.MsSqlOperator(
 )
 {{< / highlight >}}
 
+
 ### Create a connection reference
 
 Let's talk about `mssql_con_id` parameter, you can create a `conn_id` using Airflow UI
@@ -49,4 +68,8 @@ Let's talk about `mssql_con_id` parameter, you can create a `conn_id` using Airf
 In ordert to use `MsSQLOperator` you should install following modules (tested in `Airflow 10.1.14`)
 
 {{< highlight bash "linenos=table,hl_lines=8 15-17,linenostart=1" >}}
+pip install 'apache-airflow==1.10.12' --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-1.10.12/constraints-3.7.txt" \
+&& python -m pip install --upgrade pip \
+&& pip install apache-airflow-providers-microsoft-mssql==1.0.0
+&& pip install pymssql
 {{< / highlight >}}
