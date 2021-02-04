@@ -56,16 +56,16 @@ class airflow.providers.microsoft.mssql.operators.mssql.MsSqlOperator(
 )
 {{< / highlight >}}
 
+and you need to:
 
-### Create a connection reference
+1. Install operator modules on Airflow
+2. Create a connection reference and
+3. Instantiate a `MsSQLOperator` operator
 
-Let's talk about `mssql_con_id` parameter, you can create a `conn_id` using Airflow UI
-( `Menu -> Admin -> Connections` ). You should add a hostname / login / password information attached to it. Airflow pipelines retrieve centrally-managed connections information by specifying the relevant conn_id.
 
+### Setup Airflow
 
-## Setup Airflow
-
-In ordert to use `MsSQLOperator` you should install following modules (tested in `Airflow 10.1.14`)
+In ordert to use `MsSQLOperator` you should install following modules (tested in `Airflow 10.1.12`)
 
 {{< highlight bash "linenos=table,hl_lines=8 15-17,linenostart=1" >}}
 pip install 'apache-airflow==1.10.12' --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-1.10.12/constraints-3.7.txt" \
@@ -73,3 +73,8 @@ pip install 'apache-airflow==1.10.12' --constraint "https://raw.githubuserconten
 && pip install apache-airflow-providers-microsoft-mssql==1.0.0
 && pip install pymssql
 {{< / highlight >}}
+
+### Create a connection reference
+
+Let's talk about `mssql_con_id` parameter, you can create a `conn_id` using Airflow UI
+( `Menu -> Admin -> Connections` ). You should add a hostname / login / password information attached to it. Airflow pipelines retrieve centrally-managed connections information by specifying the relevant conn_id.

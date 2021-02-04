@@ -4,3 +4,12 @@
 [submodule "themes/harbor"]
 	path = themes/harbor
 	url = https://github.com/matsuyoshi30/harbor.git
+[submodule "themes/anatole"]
+	path = themes/anatole
+	url = https://github.com/lxndrblz/anatole.git
+[submodule "themes/charaka"]
+	path = themes/charaka
+	url = https://github.com/natarajmb/charaka-hugo-theme.git
+[submodule "themes/even"]
+	path = themes/even
+	url = https://github.com/olOwOlo/hugo-theme-even
