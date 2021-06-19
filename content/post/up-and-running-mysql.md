@@ -4,7 +4,7 @@ date: 2020-05-16T00:50:18-05:00
 draft: true
 ---
 
-# Why MySQL matters?
+# Airflow Metadata Store
 
 Our pipeline orchestrator runs on Google Cloud Platform under Google Cloud Composer product name. For short Composer is an environment used for [Apache Airflow](https://airflow.apache.org/) deployment and the following diagrame ilustrate its components:
 
