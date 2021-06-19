@@ -1,7 +1,7 @@
 ---
 title: "Up and Running Mysql"
 date: 2020-05-16T00:50:18-05:00
-draft: true
+draft: false
 ---
 
 # Airflow Metadata Store
