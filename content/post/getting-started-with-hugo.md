@@ -15,14 +15,15 @@ use cases.
 
 ### Day 1. Installation
 
-[] Install hugo following the proper documentation https://gohugo.io/getting-started/installing/
-[] Start a hugo server locally
+1. Install hugo following the proper documentation https://gohugo.io/getting-started/installing/
+2. Start a hugo server locally
 
-    ```bash
+    ```
     git clone https://github.com/gohugoio/hugoDocs.git
     cd hugoDocs
     hugo server
     ```
-[] Read the documentation and get familiar with basic commands, e.g., create a new post, add content, etc.
+3. Read the documentation and get familiar with basic commands, e.g., create a new post, add content and build static files.
+
 ### Day 2. TBD
 
