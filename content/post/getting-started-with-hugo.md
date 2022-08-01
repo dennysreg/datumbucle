@@ -27,13 +27,13 @@ use cases.
 
 ### Day 2. Add a new post and create a Pull Request
 
-0. Clone this public repo `
+0. Clone this public repo `git clone https://github.com/dennysreg/datumbucle.git`
 1. `cd datumbucle`
 2. Create a new branch `git checkout -b dev/day-2-create-my-first-post-<your-name>`
 3. Create a new post `hugo new post/my-first-post-<your-name>`
 4. Edit the `content/post/my-first-post-<your-name>.md`
-5. Start hugo server incluiding the drafts `hugo server -D` and verify everythin looks as expected.
+5. Start hugo server including the drafts `hugo server -D` and verify everything looks as expected.
 6. Stage your changes `git add .`
 7. Create a commit `git commit -m 'my first post'`
 8. Push your branch to origin `git push --set-upstream origin dev/day-2-create-my-first-post-<your-name>`
-9. Go to [github](https://github.com/dennysreg/datumbucle) and create a Pull Request adding me as reviewer (@dennysreg)
+9. Go to [github](https://github.com/dennysreg/datumbucle) and create a Pull Request
